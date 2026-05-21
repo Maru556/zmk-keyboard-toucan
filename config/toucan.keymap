@@ -12,21 +12,6 @@
 #define FUN   3
 #define BT    4
 
-#undef COLON
-#define COLON LS(SEMI)
-
-#undef HASH
-#define HASH LS(N3)
-
-#undef BSLH
-#define BSLH BSLH
-
-#undef CARET
-#define CARET LS(N6)
-
-#undef AMPS
-#define AMPS LS(N7)
-
 / {
     behaviors {
         hml: homerow_mods_left {
@@ -131,8 +116,8 @@
                 &none  &kp AT        &kp DLLR      &kp PLUS     &kp PIPE     &kp PRCNT
                        &none         &kp LBRC      &kp RBRC     &kp MINUS    &kp UNDER   &none
 
-                &none  &kp COLON     &kp HASH      &kp BSLH     &kp CARET    &kp AMPS
-                       &none         &kp LBKT      &kp RBKT     &kp SLASH    &kp QMARK   &none
+                &none  &kp LS(SEMI) &kp LS(N3) &kp BSLH &kp LS(N6) &kp LS(N7)
+                       &none        &kp LBKT    &kp RBKT &kp SLASH  &kp QMARK  &none
 
                        &none         &none         &none
                        &none         &none         &none
